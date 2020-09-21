@@ -1,0 +1,45 @@
+body {
+  color: #999;
+}
+
+
+.image {
+  width: 40px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid #000;
+}
+
+
+.check-form {
+  padding-top: 10px;
+  display: flex;
+}
+
+.input {
+  height: 30px;
+  width: 200px;
+  border-radius: 7px;
+  border: 1px solid #999;
+}
+
+.check-button {
+  margin-left: 20px;
+  width: 120px;
+  height: 34px;
+  background-color: #3CB371;
+  color: aliceblue;
+  border-radius: 7px;
+  border: 1px solid #999;
+}
+
+.hidden-incorrect {
+  padding-top: 10px;
+  display: none;
+}
+
+.hidden-correct {
+  padding-top: 10px;
+  color: #228B22;
+  display: none;
+}
