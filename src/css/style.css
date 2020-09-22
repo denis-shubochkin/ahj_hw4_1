@@ -43,3 +43,13 @@ body {
   color: #228B22;
   display: none;
 }
+
+.hidden-luhn {
+  padding-top: 10px;
+  display: none;
+}
+
+.card {
+  padding-top: 10px;
+  color: #228B22;
+}
