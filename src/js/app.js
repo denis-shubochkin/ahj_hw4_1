@@ -7,8 +7,8 @@ const incorrectLabel = document.querySelector('.hidden-incorrect');
 const luhnLabel = document.querySelector('.hidden-luhn');
 const correctLabel = document.querySelector('.hidden-correct');
 const labels = document.querySelector('.labels');
-butn.addEventListener('click', checkCorrect);
-input.addEventListener('keyup',showPaySystem);
+if(butn){butn.addEventListener('click', checkCorrect);}
+if(input){input.addEventListener('keyup',showPaySystem);}
 let content;
 
  function clearLabelsErrors() {
@@ -17,7 +17,7 @@ let content;
   correctLabel.style.display = 'none';
 }
 
-   function checkPaySystem(cont)
+   export function checkPaySystem(cont)
 {
   cont = cont.replace(/\s/g, '');
   if(cont.startsWith('4013'))
@@ -61,7 +61,7 @@ let content;
   labels.insertAdjacentHTML('beforebegin',`<div class="card">${checkPaySystem(content)}</div>`)
 }
 
-  function checkNumber(cont) {
+  export function checkNumber(cont) {
   cont = cont.replace(/\s/g, '');
   if(cont.length!==16)
   {

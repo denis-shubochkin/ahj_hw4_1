@@ -5,6 +5,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   devtool: 'source-map',
+  devServer: {
+    port: 9000,
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
@@ -16,10 +19,10 @@ module.exports = {
           'file-loader',
           {
             loader: 'image-webpack-loader',
-            // options: {
-            //   bypassOnDebug: true, // webpack@1.x
-            //   disable: true, // webpack@2.x and newer
-            // },
+             options: {
+               bypassOnDebug: true, // webpack@1.x
+               disable: true, // webpack@2.x and newer
+             },
           },
         ],
       },

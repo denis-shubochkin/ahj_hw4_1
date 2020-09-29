@@ -1,6 +1,8 @@
 import {checkPaySystem} from '../app'
 import {checkNumber} from '../app'
-import {luhnAlgorithm} from '../app'
+
+
+
 
 test.each([
     ['Visa check','40131111','VISA'],
@@ -12,7 +14,7 @@ test.each([
     ['МИР check','40181111','МИР'],
     ['Не определено','1111111','Платежная система не определена']
 ]) (('%s'),(_,input,expected) => {
-    expected(checkPaySystem(input)).toBe(expected);
+    expect(checkPaySystem(input)).toBe(expected);
 });
 
 test('short number', () => {
@@ -26,7 +28,7 @@ test('long number', () => {
 });
 
 test('correct number', () => {
-    const num='1234 4453 5554 7777';
+    const num='1234 4453 5554 7772';
     expect(checkNumber(num)).toBe(1);
 });
 

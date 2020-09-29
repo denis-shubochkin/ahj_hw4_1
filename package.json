@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "lint": "eslint .",
     "test": "jest --passWithNoTests",
+    "e2e": "jest --testPathPattern=./src/js/e2e/",
     "coverage": "jest --coverage",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
@@ -33,6 +34,7 @@
     "jest": "^25.5.4",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.9.0",
+    "puppeteer": "^5.3.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3"
