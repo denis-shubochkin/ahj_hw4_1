@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/otx4p4ng5ti8igml?svg=true)](https://ci.appveyor.com/project/denis-shubochkin/ahj-hw3-1)
+[![Build status](https://ci.appveyor.com/api/projects/status/1x8yhce0ucsrwopd?svg=true)](https://ci.appveyor.com/project/denis-shubochkin/ahj-hw4-1)
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ нужно использовать менеджер пакетов yarn (а значит, никакого `package-lock.json` в репозитории быть не должно)
