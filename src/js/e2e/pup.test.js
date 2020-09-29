@@ -9,7 +9,7 @@ describe('Validation form', () => {
     browser = await puppeteer.launch({
       headless: false,
       slowMo: 100,
-      devtools: true,
+      //devtools: true,
     });
     page = await browser.newPage();
   });
