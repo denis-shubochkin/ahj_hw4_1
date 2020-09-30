@@ -8,7 +8,7 @@ describe('Validation form', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: true,
-      slowMo: 100,
+      slowMo: 100, 
     });
     page = await browser.newPage();
   });
