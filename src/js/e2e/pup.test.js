@@ -29,6 +29,7 @@ describe('Validation form', () => {
   });
   afterAll(async () => {
     await browser.close();
+    server.kill();
   });
   test('show not found card system', async () => {
     await page.goto(baseUrl);
