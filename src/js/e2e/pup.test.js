@@ -1,6 +1,21 @@
 import puppeteer from 'puppeteer';
 
 jest.setTimeout(30000);
+
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const config = require('../webpack.config');
+
+const server = new WebpackDevServer(webpack(config), {});
+server.listen(9000, 'localhost', (err) => {
+  if (err) {
+    return;
+  }
+  if (process.send) {
+    process.send('ok');
+  }
+});
+
 describe('Validation form', () => {
   let browser = null;
   let page = null;
